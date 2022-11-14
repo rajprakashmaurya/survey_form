@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+
+    <style>
+      body {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/001/946/569/original/abstract-geometric-hexagons-yellow-background-with-diagonal-striped-lines-free-vector.jpg);
+      }
+      #h1 {
+        text-align: center;
+      }
+      #form {
+        padding-left: 40%;
+
+        margin-block: 2%;
+        font: 1em sans-serif;
+        box-sizing: content-box;
+      }
+      #description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="h1">
+        <h1 id="title">Camp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <div id="form">
+        <form id="survey-form">
+          <label id="name-label">Name </label><br /><input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+          <br />
+          <br />
+
+          <label id="email-label">Email </label><br /><input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br />
+          <br />
+          <label id="number-label">Age (optional)</label><br />
+          <input
+            id="number"
+            type="number"
+            min="0"
+            max="100"
+            placeholder="Age"
+          />
+          <br />
+          <br />
+
+          <label for="select"
+            >Which option best describes your current role?</label
+          >
+          <br />
+          <select id="dropdown" placeholder="Select current role">
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <div>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+
+            <input type="radio" name="html" value="definitely" /><label
+              for="definitely"
+              >Definitely</label
+            >
+            <br />
+            <input type="radio" name="html" value="maybe" /><label for="maybe"
+              >Maybe</label
+            >
+            <br />
+            <input type="radio" name="html" value="notsure" /><label
+              for="notsure"
+              >Not sure</label
+            >
+          </div>
+          <br />
+          <div>
+            <label for="project"
+              >What is your favorite feature of freeCodeCamp?</label
+            ><br />
+            <select id="dropdown" placeholder="Projects">
+              <option value="challenges">Challenges</option>
+              <option value="project">Projects</option>
+              <option value="community">Community</option>
+              <option value="open-source">Open source</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label
+              >What would you like to see improved? (Check all that
+              apply)</label
+            ><br />
+            <input
+              type="checkbox"
+              value="front-end-project"
+              name="front-end project"
+              id="front-end"
+            />
+            <label for="front-end">Front-end Project</label>
+            <br />
+            <input
+              type="checkbox"
+              value="back-end-project"
+              name="back-end project"
+              id="back-end"
+            />
+            <label for="back-end">Back-end Projects</label>
+            <br />
+            <input type="checkbox" name=data Visualization" value="data
+            visualization" id="data-visualization" />
+            <label for="data-visualization">Data-visualization</label>
+
+            <br />
+            <input
+              type="checkbox"
+              value="challenges"
+              name="Challenges"
+              id="Challenges"
+            />
+            <label for="Challenges">Challenges</label>
+
+            <br />
+            <input type="checkbox" name=Open Source Community" value="open
+            source community" id="Open Source Community" />
+            <label for="Open Source Community">Open Source Community</label>
+
+            <br />
+            <input type="checkbox" name=Gitter help rooms" value="gitter help
+            rooms" id="Gitter help rooms" />
+            <label for="Gitter help rooms">Gitter help rooms</label>
+
+            <br />
+            <input type="checkbox" name=Videos" value="vedios" id="Videos" />
+            <label for="Videos">Videos</label>
+
+            <br />
+            <input type="checkbox" name=City Meetups" value="city meetups"
+            id="City Meetups" />
+            <label for="City Meetups">City Meetups</label>
+
+            <br />
+            <input type="checkbox" name=Wiki" value="wiki" id="Wiki" />
+            <label for="Wiki">Wiki</label>
+
+            <br />
+            <input type="checkbox" name=Forum" value="forum" id="Forum" />
+            <label for="Forum">Forum</label>
+
+            <br />
+            <input type="checkbox" name=additional courses" value="additional
+            courses" id="additional courses" />
+            <label
+              for="additional
+          courses"
+              >Additional Courses</label
+            >
+          </div>
+          <div>
+            <p>Any comments or suggestions?</p>
+
+            <textarea placeholder="Your text here"></textarea>
+            <br />
+            <br />
+            <input type="submit" id="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
